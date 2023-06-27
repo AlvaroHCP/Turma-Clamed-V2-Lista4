@@ -9,6 +9,13 @@ let arrayUser = (User.split(",")).map(x => Number(x.trim()))
 
 alert(`The typed array is [${arrayUser}]`)
 
-somaArray(arrayUser)
-calculaMedia(arrayUser)
-multiplicaArray(arrayUser)
+let sum = somaArray(arrayUser)
+let average = calculaMedia(arrayUser)
+let product = multiplicaArray(arrayUser)
+
+$("section").append(`<h1 style="font-family:TimesNewRoman; text-align: center; margin-top: 150px; color: red; ">Array: [${arrayUser}]</h1>`)
+$("ul").append(`<li style="margin-top: 50px; color: purple; ">Soma dos elementos: ${sum}</li>`)
+$("ul").append(`<li style="margin-top: 50px; color: green; ">Média: ${average}</li>`)
+$("ul").append(`<li style="margin-top: 50px; color: blue; ">Produto dos elementos: ${product}</li>`)
+
+// $("body").append("<button style=\"background-color: red; width: 100px; height: 40px; text-align: center;\" href=\"./\">Reiniciar</button>")
