@@ -1,3 +1,5 @@
-export function multiplicaArray() {
-    console.log("funciona multiplicaArray.")
+export function multiplicaArray(array) {
+    // console.log("funciona multiplicaArray.")
+    let product = array.reduce((total, number) => total *= number, 1)
+    alert(product)
 }

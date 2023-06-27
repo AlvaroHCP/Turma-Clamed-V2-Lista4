@@ -11,4 +11,4 @@ alert(arrayUser)
 
 somaArray(arrayUser)
 calculaMedia(arrayUser)
-multiplicaArray()
+multiplicaArray(arrayUser)
