@@ -9,6 +9,6 @@ let arrayUser = ("5,2,13,4,9".split(",")).map(x => Number(x))
 
 alert(arrayUser)
 
+somaArray(arrayUser)
 calculaMedia(arrayUser)
 multiplicaArray()
-somaArray()
