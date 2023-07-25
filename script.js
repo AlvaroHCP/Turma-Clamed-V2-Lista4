@@ -1,7 +1,12 @@
 import somaImpares from "./somaImpares.js"
 import filtrarPares from "./filtrarPares.js"
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let lista = prompt("Insira uma lista de números. \n")
+let array = lista.split(",").map(n => Number(n))
 
 console.log(filtrarPares(array) + "\n")
 console.log(somaImpares(array))
+console.log
+
+alert(`Números pares: [${filtrarPares(array)}]
+Soma dos números ímpares: ${somaImpares(array)}`)
